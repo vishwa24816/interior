@@ -3,8 +3,8 @@ import { Mail, MapPin, Phone } from "lucide-react";
 import { ContactForm } from "./contact-form";
 
 export const metadata: Metadata = {
-  title: "Contact Us | Frame & Hue",
-  description: "Get in touch with the Frame & Hue team to start your design journey.",
+  title: "Contact Us | Interior website",
+  description: "Get in touch with the Interior website team to start your design journey.",
 };
 
 export default function ContactPage() {
@@ -39,7 +39,7 @@ export default function ContactPage() {
               <Mail className="h-6 w-6 text-primary mt-1 flex-shrink-0" />
               <div>
                 <h3 className="font-semibold">Email</h3>
-                <p className="text-muted-foreground">hello@frameandhue.com</p>
+                <p className="text-muted-foreground">hello@interiorwebsite.com</p>
               </div>
             </div>
           </div>

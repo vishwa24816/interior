@@ -47,7 +47,7 @@ export default function HomePage() {
             Crafting Spaces, Inspiring Lives
           </h1>
           <p className="mt-4 md:mt-6 text-lg md:text-xl text-gray-200">
-            Frame & Hue is a full-service interior design firm that creates timeless, sophisticated spaces tailored to your lifestyle.
+            Interior website is a full-service interior design firm that creates timeless, sophisticated spaces tailored to your lifestyle.
           </p>
           <Button asChild size="lg" className="mt-8">
             <Link href="/portfolio">Explore Our Work <ArrowRight className="ml-2 h-5 w-5" /></Link>

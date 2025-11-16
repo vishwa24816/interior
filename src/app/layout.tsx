@@ -6,7 +6,7 @@ import { Footer } from "@/components/layout/footer";
 import { Toaster } from "@/components/ui/toaster";
 
 export const metadata: Metadata = {
-  title: "Frame & Hue",
+  title: "Interior website",
   description: "Sophisticated interior design for modern living.",
 };
 

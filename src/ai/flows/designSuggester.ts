@@ -34,11 +34,11 @@ export const designSuggester: AIFlow = defineFlow(
     // For example, you could construct a detailed prompt and call the AI model:
     /*
     const prompt = `
-      You are an expert interior designer for a firm called "Frame & Hue".
+      You are an expert interior designer for a firm called "Interior website".
       A client is looking for design suggestions for their ${input.roomType}.
       Their preferred style is ${input.style} and their budget is ${input.budget}.
 
-      Please provide a design concept that aligns with Frame & Hue's sophisticated, warm, and minimalist aesthetic.
+      Please provide a design concept that aligns with Interior website's sophisticated, warm, and minimalist aesthetic.
       The response should be a JSON object with the following keys: "colorPalette", "furniture", "layout", and "mood".
       - "colorPalette": An array of 5 hex color codes. Include our brand colors #BBD1B1 (soft green) and #F5F5DC (cream).
       - "furniture": An array of 3-4 key furniture recommendations (strings).

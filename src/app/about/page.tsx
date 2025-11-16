@@ -6,8 +6,8 @@ import { Eye, Heart, Lightbulb } from "lucide-react";
 import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
 
 export const metadata: Metadata = {
-  title: "About Us | Frame & Hue",
-  description: "Learn about the team, philosophy, and passion behind Frame & Hue's designs.",
+  title: "About Us | Interior website",
+  description: "Learn about the team, philosophy, and passion behind Interior website's designs.",
 };
 
 const values = [
@@ -42,7 +42,7 @@ export default function AboutPage() {
       {/* Page Header */}
       <section className="py-16 md:py-24 bg-secondary">
         <div className="container mx-auto px-4 text-center">
-          <h1 className="font-headline text-4xl md:text-5xl font-bold">About Frame & Hue</h1>
+          <h1 className="font-headline text-4xl md:text-5xl font-bold">About Interior website</h1>
           <p className="mt-4 text-lg text-muted-foreground max-w-3xl mx-auto">
             We are a collective of designers, artists, and strategists who believe that thoughtful design can transform lives.
           </p>
@@ -57,7 +57,7 @@ export default function AboutPage() {
               <h2 className="font-headline text-3xl md:text-4xl font-bold mb-6">Our Story</h2>
               <div className="space-y-4 text-muted-foreground">
                 <p>
-                  Founded in 2010, Frame & Hue was born from a desire to create spaces that are not only beautiful but also deeply personal. We believe that a home should be a sanctuary, a reflection of its inhabitants' personalities and lifestyles.
+                  Founded in 2010, Interior website was born from a desire to create spaces that are not only beautiful but also deeply personal. We believe that a home should be a sanctuary, a reflection of its inhabitants' personalities and lifestyles.
                 </p>
                 <p>
                   Over the past decade, we have grown into a passionate team of designers dedicated to crafting bespoke interiors. Our philosophy is rooted in collaboration, working closely with our clients to bring their vision to life with creativity and precision.

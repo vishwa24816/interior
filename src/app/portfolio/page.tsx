@@ -3,7 +3,7 @@ import { PlaceHolderImages } from "@/lib/placeholder-images";
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Portfolio | Frame & Hue",
+  title: "Portfolio | Interior website",
   description: "Explore a curated collection of our finest interior design projects.",
 };
 
@@ -15,7 +15,7 @@ export default function PortfolioPage() {
       <header className="text-center mb-12">
         <h1 className="font-headline text-4xl md:text-5xl font-bold">Our Work</h1>
         <p className="mt-4 text-lg text-muted-foreground max-w-2xl mx-auto">
-          Discover the artistry and attention to detail that define Frame & Hue. Each project is a unique story of transformation and style.
+          Discover the artistry and attention to detail that define Interior website. Each project is a unique story of transformation and style.
         </p>
       </header>
 
