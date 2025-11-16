@@ -1,4 +1,5 @@
-import {defineFlow, AIFlow} from 'genkit/flow';
+
+import {defineFlow, AIFlow} from 'genkit';
 import {z} from 'zod';
 import {ai} from '../genkit';
 
