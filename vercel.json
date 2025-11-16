@@ -1,0 +1,8 @@
+{
+  "rewrites": [
+    {
+      "source": "/api/flows/:flow*",
+      "destination": "/api/genkit?flow=:flow*"
+    }
+  ]
+}
