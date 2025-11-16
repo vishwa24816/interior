@@ -1,7 +1,7 @@
 
-import {defineFlow, AIFlow} from 'genkit';
 import {z} from 'zod';
 import {ai} from '../genkit';
+import { AIFlow } from 'genkit/flow';
 
 const mockSuggestions = {
   colorPalette: ['#F5F5DC', '#BBD1B1', '#6B7280', '#374151', '#FFFFFF'],
@@ -15,7 +15,7 @@ const mockSuggestions = {
   mood: 'Calm, sophisticated, and inviting, with a focus on natural textures and organic shapes.'
 };
 
-export const designSuggester: AIFlow = defineFlow(
+export const designSuggester: AIFlow<any, any> = ai.defineFlow(
   {
     name: 'designSuggester',
     inputSchema: z.object({
