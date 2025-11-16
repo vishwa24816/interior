@@ -63,11 +63,11 @@ export function DesignForm() {
   const renderResults = () => {
     if (flow.loading) {
       return (
-        <Card className="md:col-span-2 flex flex-col items-center justify-center p-8 min-h-[300px]">
+        <div className="md:col-span-2 flex flex-col items-center justify-center p-8 min-h-[300px]">
           <Loader2 className="h-12 w-12 animate-spin text-primary mb-4" />
           <h3 className="font-headline text-2xl">Crafting your design...</h3>
           <p className="text-muted-foreground">This may take a moment.</p>
-        </Card>
+        </div>
       );
     }
 
@@ -87,7 +87,7 @@ export function DesignForm() {
             <Card>
                 <CardHeader><CardTitle>Color Palette</CardTitle></CardHeader>
                 <CardContent>
-                <div className="flex gap-4">
+                <div className="flex flex-wrap gap-4">
                     {output.colorPalette.map((color, i) => (
                     <div key={i} className="flex flex-col items-center">
                         <div className="w-16 h-16 rounded-full border" style={{ backgroundColor: color }} />
@@ -116,17 +116,19 @@ export function DesignForm() {
     }
 
     return (
-        <Card className="md:col-span-2 flex flex-col items-center justify-center p-8 min-h-[300px] border-dashed">
+        <div className="md:col-span-2 flex flex-col items-center justify-center p-8 min-h-[300px] border-dashed rounded-lg border-2">
           <Wand2 className="h-12 w-12 text-muted-foreground mb-4" />
           <h3 className="font-headline text-2xl text-muted-foreground">Your design awaits</h3>
           <p className="text-muted-foreground">Fill out the form to see the magic happen.</p>
-        </Card>
+        </div>
     )
   }
 
   return (
     <>
       <div className="md:col-span-1">
+        <h2 className="font-headline text-2xl font-bold mb-4">Your Preferences</h2>
+        <p className="text-muted-foreground mb-6">Select a room, style, and budget to get started.</p>
         <Form {...form}>
           <form onSubmit={form.handleSubmit(onSubmit)} className="space-y-6">
             <FormField

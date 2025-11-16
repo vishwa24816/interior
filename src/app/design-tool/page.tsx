@@ -16,14 +16,9 @@ export default function DesignToolPage() {
         </p>
       </header>
 
-      <div className="grid md:grid-cols-3 gap-8">
-        <div className="md:col-span-1 bg-card p-8 rounded-lg shadow-sm">
-            <h2 className="font-headline text-2xl font-bold mb-4">Your Preferences</h2>
-            <p className="text-muted-foreground mb-6">Select a room, style, and budget to get started.</p>
+      <div className="bg-card p-4 md:p-8 rounded-lg shadow-sm max-w-6xl mx-auto">
+        <div className="grid md:grid-cols-3 gap-8">
             <DesignForm />
-        </div>
-        <div className="md:col-span-2">
-          {/* Results will be handled by the client component */}
         </div>
       </div>
     </div>
