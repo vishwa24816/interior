@@ -1,4 +1,4 @@
-import {defineFlow, AIFlow} from '@genkit-ai/next/server';
+import {defineFlow, AIFlow} from 'genkit/flow';
 import {z} from 'zod';
 import {ai} from '../genkit';
 

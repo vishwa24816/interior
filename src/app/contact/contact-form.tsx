@@ -2,7 +2,6 @@
 
 import { zodResolver } from "@hookform/resolvers/zod";
 import { useForm } from "react-hook-form";
-import { z } from "zod";
 
 import { Button } from "@/components/ui/button";
 import {
@@ -17,28 +16,7 @@ import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import { useToast } from "@/hooks/use-toast";
 import { Loader2 } from "lucide-react";
-
-const formSchema = z.object({
-  name: z.string().min(2, {
-    message: "Name must be at least 2 characters.",
-  }),
-  email: z.string().email({
-    message: "Please enter a valid email address.",
-  }),
-  message: z.string().min(10, {
-    message: "Message must be at least 10 characters.",
-  }),
-});
-
-type FormData = z.infer<typeof formSchema>;
-
-async function handleFormSubmission(data: FormData) {
-  "use server";
-  console.log("Form submitted:", data);
-  // Here you would typically send an email or save to a database.
-  // We'll simulate a delay.
-  await new Promise(resolve => setTimeout(resolve, 1000));
-}
+import { handleFormSubmission, type FormData, formSchema } from "./actions";
 
 export function ContactForm() {
   const { toast } = useToast();

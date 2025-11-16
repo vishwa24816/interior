@@ -119,18 +119,6 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* AI Tool CTA */}
-      <section className="py-16 md:py-24 bg-secondary">
-        <div className="container mx-auto px-4 text-center">
-            <h2 className="font-headline text-3xl md:text-4xl font-bold">Find Your Style</h2>
-            <p className="mt-4 text-lg text-muted-foreground max-w-2xl mx-auto">
-                Not sure where to start? Use our AI-powered tool to get personalized design suggestions based on your preferences.
-            </p>
-            <Button asChild size="lg" className="mt-8">
-              <Link href="/design-tool">Get Started <ArrowRight className="ml-2 h-5 w-5" /></Link>
-            </Button>
-        </div>
-      </section>
     </div>
   );
 }
