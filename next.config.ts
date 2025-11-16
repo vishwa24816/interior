@@ -41,6 +41,9 @@ const nextConfig: NextConfig = {
         fs: false,
         dns: false,
         http2: false,
+        child_process: false,
+        dgram: false,
+        async_hooks: false,
       };
     }
     return config;
