@@ -32,12 +32,15 @@ const nextConfig: NextConfig = {
   },
   webpack: (config, { isServer }) => {
     if (!isServer) {
-      // Don't resolve 'net' module on the client
-      // See: https://github.com/webpack/webpack/issues/11648
+      // Don't resolve Node.js modules on the client
+      // https://webpack.js.org/configuration/resolve/#resolvefallback
       config.resolve.fallback = {
         ...config.resolve.fallback,
         net: false,
         tls: false,
+        fs: false,
+        dns: false,
+        http2: false,
       };
     }
     return config;
