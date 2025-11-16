@@ -32,14 +32,18 @@ export default function ContactPage() {
               <Phone className="h-6 w-6 text-primary mt-1 flex-shrink-0" />
               <div>
                 <h3 className="font-semibold">Phone</h3>
-                <p className="text-muted-foreground">(123) 456-7890</p>
+                <a href="tel:1234567890" className="text-muted-foreground hover:text-primary transition-colors">
+                  (123) 456-7890
+                </a>
               </div>
             </div>
             <div className="flex items-start gap-4">
               <Mail className="h-6 w-6 text-primary mt-1 flex-shrink-0" />
               <div>
                 <h3 className="font-semibold">Email</h3>
-                <p className="text-muted-foreground">hello@interiorwebsite.com</p>
+                <a href="mailto:hello@interiorwebsite.com" className="text-muted-foreground hover:text-primary transition-colors">
+                  hello@interiorwebsite.com
+                </a>
               </div>
             </div>
           </div>
